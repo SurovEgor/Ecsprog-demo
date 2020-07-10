@@ -3,7 +3,7 @@
 const searchButton = document.querySelector(".search__icon"),
       closeSearchButton = document.querySelector(".search-button-close"),
       form = document.querySelector('.form'),
-      buttonMenu = document.querySelector(".mobile-menu__button"),
+      buttonMenu = document.querySelector(".header-menu__burger"),
       mobile = document.querySelector(".header__right");
 
     searchButton.addEventListener("click", () => { 
@@ -21,7 +21,7 @@ const searchButton = document.querySelector(".search__icon"),
     document.addEventListener('click', (e) => !form.contains(e.target) && !searchButton.contains(e.target) ?  openForm() : false)
 
     buttonMenu.addEventListener("click", () => {
-        buttonMenu.classList.toggle("mobile-menu__button_active");
+        buttonMenu.classList.toggle("header-menu__burger_active");
         mobile.classList.toggle("mobile");
     });
 

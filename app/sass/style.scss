@@ -116,15 +116,15 @@ button {
     width: 100%;
     visibility: visible;
 }
-.mobile-menu__button {
-    display: block;
+.header-menu__burger {
+    display: none;
     width: 50px;
     height: 50px;
     position: relative;
 }
-.mobile-menu__button span,
-.mobile-menu__button span::before,
-.mobile-menu__button span::after {
+.header-menu__burger span,
+.header-menu__burger span::before,
+.header-menu__burger span::after {
     position: absolute;
     top: 50%;
     width: 32px;
@@ -133,27 +133,30 @@ button {
     margin-top: -1px;
     margin-left: -16px;
 }
-.mobile-menu__button span::before,
-.mobile-menu__button span::after {
+.header-menu__burger span::before,
+.header-menu__burger span::after {
     content:'';
     transition: .3s;
 }
-.mobile-menu__button span::before {
+.header-menu__burger span::before {
     transform: translateY(-10px);
 }
-.mobile-menu__button span::after {
+.header-menu__burger span::after {
     transform: translateY(10px);
 }
-.mobile-menu__button_active span::before {
+.header-menu__burger_active span::before {
     transform: rotate(45deg);
 }
-.mobile-menu__button_active span {
+.header-menu__burger_active span {
     height: 0;
 }
-.mobile-menu__button_active span::after {
+.header-menu__burger_active span::after {
     transform: rotate(-45deg);
 }
 @media screen and (max-width: 800px) {
+    .header-menu__burger {
+        display: block;
+    }
     .header__right {
         width: 100%;
         position: absolute;
@@ -200,7 +203,7 @@ button {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 0 20px;
+        padding: 0 10px;
         align-items: center;
         z-index: 1;
     }
