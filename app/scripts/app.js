@@ -21,7 +21,7 @@ const searchButton = document.querySelector(".search__icon"),
     document.addEventListener('click', (e) => !form.contains(e.target) && !searchButton.contains(e.target) ?  openForm() : false)
 
     buttonMenu.addEventListener("click", () => {
-        buttonMenu.classList.toggle("is-active");
+        buttonMenu.classList.toggle("mobile-menu__button_active");
         mobile.classList.toggle("mobile");
     });
 
