@@ -1,5 +1,3 @@
-"use strict";
-
 const searchButton = document.querySelector(".search__icon"),
       closeSearchButton = document.querySelector(".search-button-close"),
       form = document.querySelector('.form'),
